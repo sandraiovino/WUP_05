@@ -48,8 +48,9 @@ CAT ~ CAT
 barchartGC(~infected + treatment,data=druggies)
 barchartGC(~infected + treatment,data=druggies, type="percent")
 ```
-When running this barchart it shows that placebo is more effective than the drug treatment. 
 
+ When running this barchart it shows that drug users who are in placebo are more likely to get aids then those who have the Aid's treatment.    
+ 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -59,17 +60,20 @@ table1 <- xtabs(~infected + treatment,data=druggies)
 rowPerc(table1)
 colPerc(table1)
 ```
-This numerical results shows that about 76% of the placebob treatments for druggies where more effective than the actually Aids treatment which was 24%.    
+This numerical results shows people who had AID and where in the actual drug treatment were more effective than those who were in the placebo.     
 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 ```{r}
-chisq.test(t able1)
+chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The Chi square shows P-Value of .0000001 which is less than 0.05, so we reject the null hypothesis that the treatment is not affected to the infected drug users.  
+
+When looking into the Fisher's Exact Test it shows P-Value .00000004 which is also less than 0.05, and we also reject the null hypothesis that the treatment does not work to infected drug users.  
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
