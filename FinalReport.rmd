@@ -1,15 +1,19 @@
----
+--- 
 title: "Aides Drug"
-author: "Put your name here!"
-date: "put the date here"
-output: html_document
+author: "Sandra Iovino!"
+date: "June 2024"
+
 ---
 
 ```{r include=FALSE,echo=FALSE}
 require(tidyverse)
 require(tigerstats)
 triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
-```
+
+druggies = select(triUmp, c(treatment, infected, DrugUser))
+druggies = filter(druggies, DrugUser == "yes")
+
+``` 
 
 # Introduction
 
@@ -17,7 +21,15 @@ triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the DrugUsers, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
+$H_0$: 
+$H_A$: 
+
 # Methods
+
+Treatment is a categorical variable   
+Infected is a categorical variable  
+I used the helper file   
+CAT ~ CAT   
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
