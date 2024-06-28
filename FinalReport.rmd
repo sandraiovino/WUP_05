@@ -73,10 +73,10 @@ fisher.test(table1)
 
 The Chi square shows P-Value of .0000001 which is less than 0.05, so we reject the null hypothesis that the treatment is not affected to the infected drug users.  
 
-When looking into the Fisher's Exact Test it shows P-Value .00000004 which is also less than 0.05, and we also reject the null hypothesis that the treatment does not work to infected drug users.  
+When looking into the Fisher's Exact Test it shows P-Value .00000004 which is also less than 0.05, and we also reject the null hypothesis that the treatment does not work to infected drug users. 
+
 ## Discussion and Conclusion
-our question was The treatment is not affected to the infected drug users 
- the treatment is effected to the infected drug User 
+
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-Our question was trying to check if the drug user have a
+Our question was trying to see if the new trial medication was highly effective or people who are postive in AIDS or is placebo was better. When doing the calculations we noticed that infected drug users responded better to the new study treat. This means that it would be less likely for them to have aids then those who are on the placebo treatment.  
